@@ -28,3 +28,15 @@ spec:
         limits:
           cpu: 1
           memory: 1Gi
+    - name: xc32-mplabx
+      image: artifacts.microchip.com:7999/microchip/citd/bundles/xc32-mplabx:latest
+      imagePullPolicy: Always
+      command: ['cat']
+      tty: true
+      resources:
+        requests:
+          cpu: 500m
+          memory: 750Mi
+        limits:
+          cpu: 1
+          memory: 1Gi
