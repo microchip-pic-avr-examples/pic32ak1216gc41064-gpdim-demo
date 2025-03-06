@@ -4,21 +4,21 @@
    "content":{
       "metaDataVersion":"1.3.0",
       "name":"com.microchip.mplabx.project.pic32ak1216gc41064-gpdim-demo",
-      "version":"x.x.x",
-      "displayName":"xxxxxxxxxxxxxxx",
+      "version":"1.0.0",
+      "displayName":"PIC32AK1216GC41064 General Purpose DIM Demo",
       "projectName":"pic32ak1216gc41064-gpdim-demo",
-      "shortDescription":"xxxxxxxxxxxxxxx",
+      "shortDescription":"PIC32AK1216GC41064 General Purpose DIM Demo",
       "ide":{
          "name":"MPLABX",
-         "semverRange":">=5.40.0"
+         "semverRange":">=6.25.0"
       },
       "compiler":{
-         "name":"XC16",
-         "semverRange":"^1.50.0"
+         "name":"XC32",
+         "semverRange":"^4.60.0"
       },
       "dfp":{
-         "name":"xxxxxxxxxxxxxxx",
-         "semverRange":">=x.x.x"
+         "name":"PIC32AK-GC_DFP",
+         "semverRange":">=1.0.5"
       },
 	  "configurator": {
          "name": "MCC",
@@ -30,7 +30,7 @@
          "content":{
             "metaDataVersion":"1.0.0",
             "category":"com.microchip.device",
-            "name":"xxxxxxxxxxxxxxx",
+            "name":"PIC32AK1216GC41064",
             "versionRange":"*"
          }
       },
