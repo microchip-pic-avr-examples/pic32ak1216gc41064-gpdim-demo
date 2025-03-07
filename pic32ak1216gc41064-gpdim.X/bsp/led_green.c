@@ -21,7 +21,7 @@
 
 #include <xc.h>
 #include "led_green.h"
-#include "../mcc_generated_files/pwm/sccp2.h"
+#include "../../src/config/default/peripheral/pwm/plib_pwm.h"
 
 static bool issccp2Enabled = false;
 
@@ -32,13 +32,13 @@ void LED_GREEN_Initialize(void)
 
 void LED_GREEN_On(void)
 {
-    SCCP2_PWM_Enable();
+    PWM_GeneratorEnable(PWM_GENERATOR_2);
     issccp2Enabled = true;
 }
 
 void LED_GREEN_Off(void)
 {
-    SCCP2_PWM_Disable();
+    PWM_GeneratorDisable(PWM_GENERATOR_2);
     issccp2Enabled = false;
 }
 
@@ -61,7 +61,7 @@ void LED_GREEN_Set(bool on)
 
 void LED_GREEN_SetIntensity(uint16_t request)
 {  
-    SCCP2_PWM_DutyCycleSet(request);
+    PWM_DutyCycleSet(PWM_GENERATOR_2, request);
 } 
 
 const struct LED_DIMMABLE ledGreen = 

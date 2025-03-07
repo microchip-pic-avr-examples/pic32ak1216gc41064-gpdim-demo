@@ -10,6 +10,7 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
+                <sourceRootElem>../../OneDrive - Microchip Technology Inc/Desktop/pic32ak1216gc41064-gpdim-demo/pic32ak1216gc41064-gpdim.X/mcc_generated_files/system</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

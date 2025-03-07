@@ -19,7 +19,6 @@
     THIS SOFTWARE.
 */
 
-#include "mcc_generated_files/system/system.h"
 #include "bsp/led7.h"
 #include "bsp/led6.h"
 #include "bsp/led5.h"
@@ -31,10 +30,14 @@
 #include "bsp/s1.h"
 #include "bsp/s2.h"
 #include "bsp/s3.h"
-#include "mcc_generated_files/uart/uart1.h"
+#include "../src/config/default/peripheral/uart/plib_uart1.h"
 #include "bsp/pot.h"
 #include "bsp/task.h"
 #include <stdio.h>
+#include <stddef.h>                     // Defines NULL
+#include <stdbool.h>                    // Defines true
+#include <stdlib.h>                     // Defines EXIT_FAILURE
+#include "definitions.h"                // SYS function prototypes
 
 static bool potentiometerPrintRequired = false;
 
@@ -99,12 +102,13 @@ static void printPotentiometer(void)
  
 static void checkUartApp(void)
 {
-    if(UART1_IsRxReady())
+    if(UART1_ReceiverIsReady())
     {
-        uint8_t dataRx = UART1_Read();
-        if(dataRx)
+        uint8_t dataRx[1];
+        UART1_Read(dataRx, 1);
+        if(dataRx[0])
         {
-            switch(dataRx)
+            switch(dataRx[0])
             {
                 case 'r': 
                 case 'R': 
@@ -123,11 +127,11 @@ static void checkUartApp(void)
             }
         }   
 
-        while(!UART1_IsTxReady()) 
+        while(!UART1_TransmitterIsReady()) 
         {     
         }
 
-        UART1_Write(dataRx);       
+        UART1_Write(&dataRx, sizeof(dataRx));       
     }
 }
  
@@ -168,7 +172,8 @@ static void checkButtonS3(void)
 
 int main(void)
 {       
-    SYSTEM_Initialize();
+    /* Initialize all modules */
+    SYS_Initialize ( NULL );
     initializeAllLEDs();
     initializeAllButtons();
     TASK_Initialize();
@@ -193,4 +198,8 @@ int main(void)
         checkButtonS2();
         checkButtonS3();
     }
+    
+    /* Execution should not come here during normal operation */
+
+    return ( EXIT_FAILURE );
 }
