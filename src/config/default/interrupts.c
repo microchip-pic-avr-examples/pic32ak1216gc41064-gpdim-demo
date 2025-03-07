@@ -63,6 +63,34 @@
 // Section: System Interrupt Vector declarations
 
 
+void _T1Interrupt (void);
+void _CCT1Interrupt (void);
+void _CCT2Interrupt (void);
+void _CCT3Interrupt (void);
+
+// Section: System Interrupt Vector definitions
+
+void __attribute__ (( interrupt, no_auto_psv)) _T1Interrupt (void)
+{
+    T1_InterruptHandler();
+}
+
+void __attribute__ (( interrupt, no_auto_psv)) _CCT1Interrupt (void)
+{
+    CCT1_InterruptHandler();
+}
+
+void __attribute__ (( interrupt, no_auto_psv)) _CCT2Interrupt (void)
+{
+    CCT2_InterruptHandler();
+}
+
+void __attribute__ (( interrupt, no_auto_psv)) _CCT3Interrupt (void)
+{
+    CCT3_InterruptHandler();
+}
+
+
 
 
 /*******************************************************************************

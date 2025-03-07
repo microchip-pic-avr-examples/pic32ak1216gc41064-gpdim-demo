@@ -46,6 +46,11 @@
 
 void INTC_Initialize( void )
 {
+    /* Configure Interrupt priority */
+    IPC6bits.T1IP = 1;
+    IPC6bits.CCT1IP = 1;
+    IPC6bits.CCT2IP = 1;
+    IPC6bits.CCT3IP = 1;
 
 
 }

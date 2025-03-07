@@ -39,7 +39,6 @@
 *******************************************************************************/
 #include <stddef.h>
 #include "definitions.h"
-#include "../peripheral/uart/plib_uart1.h"
 
 extern int read(int handle, void *buffer, unsigned int len);
 extern int write(int handle, void * buffer, size_t count);
@@ -63,15 +62,10 @@ int read(int handle, void *buffer, unsigned int len)
 int write(int handle, void * buffer, size_t count)
 {
    bool success = false;
-   while(!UART1_TransmitComplete())
-   {}
    if (handle == 1)
    {
        do
        {
-           while(!UART1_TransmitterIsReady())
-           {
-           }
            success = UART1_Write(buffer, count);
        }while( !success);
    }

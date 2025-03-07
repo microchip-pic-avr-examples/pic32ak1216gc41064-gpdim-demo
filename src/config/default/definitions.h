@@ -54,7 +54,10 @@
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/intc/plib_intc.h"
 #include "peripheral/adc/plib_adc1.h"
-#include "peripheral/pwm/plib_pwm.h"
+#include "peripheral/tmr/plib_tmr1.h"
+#include "peripheral/ccp/plib_sccp3.h"
+#include "peripheral/ccp/plib_sccp2.h"
+#include "peripheral/ccp/plib_sccp1.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility

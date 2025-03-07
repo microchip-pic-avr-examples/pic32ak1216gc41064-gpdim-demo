@@ -21,24 +21,26 @@
 
 #include <xc.h>
 #include "led_green.h"
-#include "../../src/config/default/peripheral/pwm/plib_pwm.h"
+#include "../../src/config/default/peripheral/ccp/plib_sccp2.h"
 
 static bool issccp2Enabled = false;
 
 void LED_GREEN_Initialize(void)
 {
-    
+    SCCP2_CompareInitialize();
+    SCCP2_Compare16bitPeriodValueSet(0xFFFF); // Set the period for the PWM
+    SCCP2_Compare16bitValueSet(0x0000);       // Set initial duty cycle
 }
 
 void LED_GREEN_On(void)
 {
-    PWM_GeneratorEnable(PWM_GENERATOR_2);
+    SCCP2_CompareStart();
     issccp2Enabled = true;
 }
 
 void LED_GREEN_Off(void)
 {
-    PWM_GeneratorDisable(PWM_GENERATOR_2);
+    SCCP2_CompareStop();
     issccp2Enabled = false;
 }
 
@@ -61,7 +63,7 @@ void LED_GREEN_Set(bool on)
 
 void LED_GREEN_SetIntensity(uint16_t request)
 {  
-    PWM_DutyCycleSet(PWM_GENERATOR_2, request);
+    SCCP2_Compare16bitValueSet(request);
 } 
 
 const struct LED_DIMMABLE ledGreen = 

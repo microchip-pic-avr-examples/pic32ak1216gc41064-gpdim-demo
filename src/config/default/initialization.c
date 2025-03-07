@@ -61,7 +61,7 @@
 #pragma config FCP_WPUCA = OFF            // Protection is disabled
 
 // FICD
-#pragma config FICD_JTAGEN = ON            // JTAG is enabled
+#pragma config FICD_JTAGEN = OFF            // JTAG is disabled
 
 // FDEVOPT
 #pragma config FDEVOPT_ALTI2C1 = OFF            // Primary I2C1 pins are used
@@ -311,11 +311,20 @@ void SYS_Initialize ( void* data )
 
 	ADC1_Initialize();
 
-	PWM_Initialize();
+    TMR1_Initialize();
+
+
+    SCCP3_CompareInitialize();
+
+    SCCP2_CompareInitialize();
+
+    SCCP1_CompareInitialize();
 
 
     INTC_Initialize();
 
+	/* Enable global interrupts */
+    (void)__builtin_enable_interrupts();
 
 
 

@@ -21,24 +21,26 @@
 
 #include <xc.h>
 #include "led_blue.h"
-#include "../../src/config/default/peripheral/pwm/plib_pwm.h"
+#include "../../src/config/default/peripheral/ccp/plib_sccp3.h"
 
 static bool issccp3Enabled = false;
 
 void LED_BLUE_Initialize(void) 
 {
-    
+    SCCP3_CompareInitialize();
+    SCCP3_Compare16bitPeriodValueSet(0xFFFF); // Set the period for the PWM
+    SCCP3_Compare16bitValueSet(0x0000);       // Set initial duty cycle
 }
 
 void LED_BLUE_On(void)
 {
-    PWM_GeneratorEnable(PWM_GENERATOR_3);
+    SCCP3_CompareStart();
     issccp3Enabled = true;
 }
 
 void LED_BLUE_Off(void)
 {
-    PWM_GeneratorDisable(PWM_GENERATOR_3);
+    SCCP3_CompareStop();
     issccp3Enabled = false;
 }
 
@@ -61,7 +63,7 @@ void LED_BLUE_Set(bool on)
 
 void LED_BLUE_SetIntensity(uint16_t request)
 {  
-    PWM_DutyCycleSet(PWM_GENERATOR_3, request);
+    SCCP3_Compare16bitValueSet(request);;
 } 
 
 const struct LED_DIMMABLE ledBlue = 
