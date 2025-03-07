@@ -1,5 +1,5 @@
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+ï¿½ [2024] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -63,7 +63,7 @@ void LED_BLUE_Set(bool on)
 
 void LED_BLUE_SetIntensity(uint16_t request)
 {  
-    SCCP3_Compare16bitRBValueSet(request);;
+    SCCP3_Compare16bitRBValueSet(request);
 } 
 
 const struct LED_DIMMABLE ledBlue = 
