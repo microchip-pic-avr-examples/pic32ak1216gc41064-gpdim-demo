@@ -134,7 +134,6 @@
           <itemPath>../src/config/default/interrupts.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>main.c</itemPath>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -185,7 +184,7 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
-      <item path="../src/main.c" ex="true" overriding="false">
+      <item path="../src/main.c" ex="false" overriding="false">
         <C32>
         </C32>
         <C32-AR>
