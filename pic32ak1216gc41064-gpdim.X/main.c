@@ -45,35 +45,6 @@
 
 static bool potentiometerPrintRequired = false;
 
-//// Function to set the duty cycle for a specific channel
-//void SCCP_PWM_SetDutyCycle(uint8_t channel, uint16_t dutyCycle)
-//{
-//    switch (channel)
-//    {
-//        case 1:
-//            SCCP1_Compare16bitValueSet(dutyCycle);
-//            break;
-//        case 2:
-//            SCCP2_Compare16bitValueSet(dutyCycle);
-//            break;
-//        case 3:
-//            SCCP3_Compare16bitValueSet(dutyCycle);
-//            break;
-//        default:
-//            // Invalid channel
-//            break;
-//    }
-//}
-//
-//// Function to set the intensity of the RGB LED
-//void SetRGBIntensity(uint16_t red, uint16_t green, uint16_t blue)
-//{
-//    // Set the duty cycle for each color channel
-//    SCCP_PWM_SetDutyCycle(1, red);   // Red channel
-//    SCCP_PWM_SetDutyCycle(2, green); // Green channel
-//    SCCP_PWM_SetDutyCycle(3, blue);  // Blue channel
-//}
-
 static void initializeAllLEDs(void)
 {
     ledRGB.initialize();
@@ -215,7 +186,6 @@ int main(void)
     TMR1_Start();
     pot.initialize();
     ledRGB.on();
-    //SetRGBIntensity(0x7FFF, 0x3FFF, 0x1FFF);
     printMenu();
     TASK_Request(printPotentiometer, 200);
     

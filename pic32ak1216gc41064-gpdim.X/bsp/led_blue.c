@@ -28,8 +28,8 @@ static bool issccp3Enabled = false;
 void LED_BLUE_Initialize(void) 
 {
     SCCP3_CompareInitialize();
-    SCCP3_Compare16bitPeriodValueSet(0xFFFF); // Set the period for the PWM
-    SCCP3_Compare16bitValueSet(0x0000);       // Set initial duty cycle
+    SCCP3_Compare16bitPeriodValueSet(0x0FFF);
+    SCCP3_Compare16bitRBValueSet(0x0000);
 }
 
 void LED_BLUE_On(void)
@@ -63,7 +63,7 @@ void LED_BLUE_Set(bool on)
 
 void LED_BLUE_SetIntensity(uint16_t request)
 {  
-    SCCP3_Compare16bitValueSet(request);;
+    SCCP3_Compare16bitRBValueSet(request);;
 } 
 
 const struct LED_DIMMABLE ledBlue = 

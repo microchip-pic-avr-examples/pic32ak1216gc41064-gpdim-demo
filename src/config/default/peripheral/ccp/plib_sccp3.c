@@ -54,15 +54,15 @@ void SCCP3_CompareInitialize (void)
     /* Disable Timer */
     CCP3CON1 &= ~_CCP3CON1_ON_MASK;
 
-    CCP3CON1 = 0x1;
+    CCP3CON1 = 0x5;
 
     CCP3CON2 = 0x1000000;
 
     CCP3CON3 = 0x0;
 
     CCP3PR = 4000;
-    CCP3RA = 500;
-    CCP3RB = 1000;
+    CCP3RA = 0;
+    CCP3RB = 4095;
 
     IEC1 |= _IEC1_CCT3IE_MASK;
 }
@@ -87,15 +87,8 @@ void SCCP3_CompareAutoShutdownSet (void)
     CCP3CON2 |= _CCP3CON2_SSDG_MASK;
 }
 
+
   
-void SCCP3_Compare16bitValueSet (uint16_t value)
-{
-    CCP3RA = (uint16_t)value;
-}
-uint16_t SCCP3_Compare16bitValueGet (void)
-{
-    return (uint16_t)CCP3RA;
-}
 
 void SCCP3_Compare16bitPeriodValueSet (uint16_t value)
 {
@@ -107,6 +100,26 @@ uint16_t SCCP3_Compare16bitPeriodValueGet (void)
     return (uint16_t)CCP3PR;
 }
 
+
+void SCCP3_Compare16bitRAValueSet (uint16_t value)
+{
+    CCP3RA = value;
+}
+
+uint16_t SCCP3_Compare16bitRAValueGet (void)
+{
+    return (uint16_t)CCP3RA;
+}
+
+void SCCP3_Compare16bitRBValueSet (uint16_t value)
+{
+    CCP3RB = value;
+}
+
+uint16_t SCCP3_Compare16bitRBValueGet (void)
+{
+    return (uint16_t)CCP3RB;
+}
 
 
 void SCCP3_TimerCallbackRegister(CCP_TIMER_CALLBACK callback, uintptr_t context)

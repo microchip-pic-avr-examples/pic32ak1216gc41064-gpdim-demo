@@ -119,14 +119,18 @@ void SCCP1_CompareAutoShutdownClear (void);
 void SCCP1_CompareAutoShutdownSet (void);
 
 
-void SCCP1_Compare16bitValueSet (uint16_t value);
-
-uint16_t SCCP1_Compare16bitValueGet (void);
 
 void SCCP1_Compare16bitPeriodValueSet (uint16_t value);
 
 uint16_t SCCP1_Compare16bitPeriodValueGet (void);
 
+void SCCP1_Compare16bitRAValueSet (uint16_t value);
+
+uint16_t SCCP1_Compare16bitRAValueGet (void);
+
+void SCCP1_Compare16bitRBValueSet (uint16_t value);
+
+uint16_t SCCP1_Compare16bitRBValueGet (void);
 
 
 // *****************************************************************************

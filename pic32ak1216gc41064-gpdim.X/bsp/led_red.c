@@ -28,8 +28,8 @@ static bool issccp1Enabled = false;
 void LED_RED_Initialize(void)
 {
     SCCP1_CompareInitialize();
-    SCCP1_Compare16bitPeriodValueSet(0xFFFF); // Set the period for the PWM
-    SCCP1_Compare16bitValueSet(0x0000);       // Set initial duty cycle
+    SCCP1_Compare16bitPeriodValueSet(0x0FFF);
+    SCCP1_Compare16bitRBValueSet(0x0000);       
 }
 
 void LED_RED_On(void)
@@ -63,7 +63,7 @@ void LED_RED_Set(bool on)
 
 void LED_RED_SetIntensity(uint16_t request)
 {  
-    SCCP1_Compare16bitValueSet(request);
+    SCCP1_Compare16bitRBValueSet(request); 
 } 
 
 const struct LED_DIMMABLE ledRed = 

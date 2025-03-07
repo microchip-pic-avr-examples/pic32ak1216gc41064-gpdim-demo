@@ -5343,7 +5343,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="INTC_50_ENABLE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;INTC_50_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp1&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -5352,7 +5354,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="INTC_50_HANDLER_LOCK"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;INTC_50_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp1&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -5374,6 +5378,28 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;INTC_51_HANDLER_LOCK&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp2&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="INTC_52_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;INTC_52_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp2&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="INTC_52_HANDLER_LOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;INTC_52_HANDLER_LOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp2&quot; value=&quot;false&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -6390,7 +6416,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCPCON1_REG_VALUE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp1&quot; value=&quot;1&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp1&quot; value=&quot;5&quot;/&gt;
     &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
@@ -6529,7 +6555,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_CCPCON1_SYNC"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_CCPCON1_SYNC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6538,7 +6566,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_CCPCON1_T32"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_CCPCON1_T32&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6556,7 +6586,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_CCPCON1_TRIGEN"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_CCPCON1_TRIGEN&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6636,7 +6668,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_CCPCON1_MOD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON1_MOD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6645,7 +6679,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_CCPCON2_ICS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON2_ICS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6665,7 +6706,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_CCPCON2_OENSYNC"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON2_OENSYNC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6674,7 +6717,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_CCPCON3_POLACE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON3_POLACE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6683,7 +6728,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_CCPPR"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPPR&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4000&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6692,7 +6744,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_CCPRA"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPRA&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6701,7 +6760,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_CCPRB"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPRB&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4095&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6710,7 +6776,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_COMP_INTERRUPT"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_INTERRUPT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6775,7 +6843,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_PERIOD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_PERIOD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp1&quot; value=&quot;1199&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6806,7 +6881,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_TIMER_INTERRUPT"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_TIMER_INTERRUPT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6828,7 +6905,12 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp1" name="CCP_TIME_PERIOD_MS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp1&gt;
   &lt;sccp1 dnOrder=&quot;0&quot; id=&quot;CCP_TIME_PERIOD_MS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Float dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;16.38425&lt;/Value&gt;
+      &lt;/Float&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;/&gt;
   &lt;/sccp1&gt;
 &lt;/sccp1&gt;
 </value>
@@ -6860,7 +6942,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCPCON1_REG_VALUE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp2&quot; value=&quot;1&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp2&quot; value=&quot;5&quot;/&gt;
     &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
@@ -7008,7 +7090,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_CCPCON1_T32"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_CCPCON1_T32&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7106,7 +7190,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_COMP_CCPCON1_MOD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON1_MOD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7135,7 +7221,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_COMP_CCPCON2_OENSYNC"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON2_OENSYNC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7144,7 +7232,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_COMP_CCPCON3_POLACE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON3_POLACE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7153,7 +7243,12 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_COMP_CCPPR"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPPR&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;/&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7162,7 +7257,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_COMP_CCPRA"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPRA&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7171,7 +7273,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_COMP_CCPRB"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPRB&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4095&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7180,7 +7289,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_COMP_INTERRUPT"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_INTERRUPT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7245,7 +7356,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_PERIOD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_PERIOD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp2&quot; value=&quot;1199&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7298,7 +7416,12 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp2" name="CCP_TIME_PERIOD_MS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp2&gt;
   &lt;sccp2 dnOrder=&quot;0&quot; id=&quot;CCP_TIME_PERIOD_MS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Float dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;16.38425&lt;/Value&gt;
+      &lt;/Float&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;/&gt;
   &lt;/sccp2&gt;
 &lt;/sccp2&gt;
 </value>
@@ -7330,7 +7453,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCPCON1_REG_VALUE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp3&quot; value=&quot;1&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp3&quot; value=&quot;5&quot;/&gt;
     &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
@@ -7469,7 +7592,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_CCPCON1_SYNC"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_CCPCON1_SYNC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7478,7 +7603,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_CCPCON1_T32"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_CCPCON1_T32&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7576,7 +7703,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_COMP_CCPCON1_MOD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON1_MOD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7605,7 +7734,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_COMP_CCPCON2_OENSYNC"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON2_OENSYNC&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7614,7 +7745,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_COMP_CCPCON3_POLACE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPCON3_POLACE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7623,7 +7756,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_COMP_CCPPR"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPPR&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4000&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7632,7 +7772,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_COMP_CCPRA"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPRA&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7641,7 +7788,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_COMP_CCPRB"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_COMP_CCPRB&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4095&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7715,7 +7869,14 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_PERIOD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_PERIOD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Long dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;65535&lt;/Value&gt;
+      &lt;/Long&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sccp3&quot; value=&quot;1199&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -7768,7 +7929,12 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sccp3" name="CCP_TIME_PERIOD_MS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sccp3&gt;
   &lt;sccp3 dnOrder=&quot;0&quot; id=&quot;CCP_TIME_PERIOD_MS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Float dnOrder=&quot;0&quot; id=&quot;max&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;16.38425&lt;/Value&gt;
+      &lt;/Float&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;/&gt;
   &lt;/sccp3&gt;
 &lt;/sccp3&gt;
 </value>
@@ -8563,27 +8729,27 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\ccp\plib_sccp1.c</file>
-         <hash>e1ddc0c856a8691d8be4ff00b952292fb6ff2f983519910ad6ef0c64b3e7e5e5</hash>
+         <hash>4ee63e74af02d6d95b1f06f5d7c59e9fcac25bf100d6f50a40b023292586d3f7</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\ccp\plib_sccp1.h</file>
-         <hash>751813a5b8e992d4f2b6620cacc27b6696448159956d8e47e27224769f7ee450</hash>
+         <hash>7c5e8136b015e4a27ac7533dce8127c7085aa12394bb7f37bcf71c453f5ca066</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\ccp\plib_sccp2.c</file>
-         <hash>e787aa59db85ea3bfe0db44b9b54457afa6ca86ba474ab17a4fc2f09969731c0</hash>
+         <hash>1bcd4f0327c102036fd3800eed3c7cdc58ae08212ce4ba26de1f719af948acfb</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\ccp\plib_sccp2.h</file>
-         <hash>7901a7578c7388cffa36ded73679d271899a0a6262049af24f110c5502b04336</hash>
+         <hash>df3fab007fb7fd79f7b8c978fc918d7ea9a26eafdcea2419c2f30c7a3665473c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\ccp\plib_sccp3.c</file>
-         <hash>ddb55f8faf35762e9d1f1bbee080d95cfcb637e7b17dec11b0bb1864bc560c34</hash>
+         <hash>3769bf8bc596643f40ab9a9aef94a656ed398d94ac5783c1c020c15c7686a354</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\ccp\plib_sccp3.h</file>
-         <hash>2d09470f62c49aee1c075ee40b6dc582299fff0e9a7c20c66a143f770a21a1e7</hash>
+         <hash>301ef4f62a66725400ce5cbfba497bcd6589ba5957b53daeaf15ad407234f8a9</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.c</file>
