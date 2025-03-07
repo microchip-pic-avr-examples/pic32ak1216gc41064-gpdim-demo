@@ -137,10 +137,6 @@
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
-  <sourceRootList>
-    <Elem>.</Elem>
-    <Elem>../../OneDrive - Microchip Technology Inc/Desktop/pic32ak1216gc41064-gpdim-demo/pic32ak1216gc41064-gpdim.X/mcc_generated_files/system</Elem>
-  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
@@ -455,8 +451,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="800000-81ffff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/C74569/MPLABXProjects/pic32ak1216gc41064-gpdim.X/debug/default/pic32ak1216gc41064-gpdim_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
@@ -561,8 +555,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="800000-81ffff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/C74569/MPLABXProjects/pic32ak1216gc41064-gpdim.X/debug/default/pic32ak1216gc41064-gpdim_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
