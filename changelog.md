@@ -1,3 +1,10 @@
+# pic32ak1216gc41064-gpdim-demo v1.1.1
+### Release Highlights
+Update title/summary of demo
+
+### Features Added\Updated
+Update title/summary of demo
+
 # pic32ak1216gc41064-gpdim-demo v1.1.0
 ### Release Highlights
 Port demo to use Harmony Framework
